@@ -26,8 +26,17 @@ git commit -m "Initial commit: RNA-seq GUI with Streamlit and Nextflow"
 
 
 ## How to Use
-
-```bash
 pip install -r requirements.txt
 streamlit run app.py
+
+rna-seq-nextflow-app/
+├── app.py                        # Streamlit GUI
+├── nextflow_pipeline/
+│   ├── main.nf                   # Your Nextflow pipeline script
+│   └── nextflow.config           # Nextflow config
+├── uploads/                      # Will hold uploaded FASTQ files (ignored by git)
+├── results/                      # Will hold output (ignored by git)
+├── .gitignore
+├── requirements.txt              # Python packages
+├── README.md                     # Description of your project
 
